@@ -1,0 +1,13 @@
+name: 'Setup dockerize'
+description: 'Install dockerize cli'
+author: 'zcong1993'
+branding:
+  icon: 'box'
+  color: 'yellow'
+inputs: 
+  dockerize-version:
+    description: 'The dockerize version we use'
+    default: '0.6.1'
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
