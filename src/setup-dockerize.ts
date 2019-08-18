@@ -1,16 +1,17 @@
+import * as core from '@actions/core'
+import { DockerizeInstaller } from './installer'
 
-import * as core from '@actions/core';
-import * as installer from './installer';
+const instance = new DockerizeInstaller()
 
 async function run() {
   try {
     const version = core.getInput('dockerize-version')
     if (version) {
-      await installer.getDockerize(version);
+      await instance.getTools(version)
     }
   } catch (error) {
-    core.setFailed(error.message);
+    core.setFailed(error.message)
   }
 }
 
-run();
+run()
