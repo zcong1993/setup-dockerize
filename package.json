@@ -20,7 +20,7 @@
   "author": "GitHub",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.0.0",
+    "@actions/core": "^1.2.6",
     "@zcong/actions-installer": "^0.1.1",
     "@zeit/ncc": "^0.20.4",
     "semver": "^6.1.1"
