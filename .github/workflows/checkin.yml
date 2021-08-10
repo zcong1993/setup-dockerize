@@ -23,3 +23,9 @@ jobs:
         || (echo "##[error] found changed files after build. please 'npm run build && npm run format'" \
                  "and check in all changes" \
             && exit 1)
+    - name: test
+      uses: ./
+      with:
+        dockerize-version: '0.6.1'
+    - name: test cmd
+      run: dockerize -version

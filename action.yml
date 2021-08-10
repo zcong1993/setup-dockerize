@@ -6,6 +6,7 @@ branding:
   color: 'yellow'
 inputs: 
   dockerize-version:
+    required: false
     description: 'The dockerize version we use'
     default: '0.6.1'
 runs:

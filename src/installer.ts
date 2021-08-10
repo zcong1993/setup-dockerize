@@ -3,14 +3,10 @@ import * as core from '@actions/core'
 
 export class DockerizeInstaller extends Installer {
   constructor() {
-    super('dockerize')
-  }
-
-  setupDir() {
     if (process.platform === 'win32') {
       core.setFailed('not support windows platform')
     }
-    super.setupDir()
+    super('dockerize')
   }
 
   getDownloadUrlByVersion(version: string): string {
