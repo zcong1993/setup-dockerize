@@ -10,5 +10,5 @@ inputs:
     description: 'The dockerize version we use'
     default: '0.6.1'
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'lib/index.js'
